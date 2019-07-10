@@ -9,8 +9,6 @@ fi
 
 docker login --username $DOCKER_USER_NAME --password $DOCKER_PASSWORD
 
-docker push cirrusci/flutter:base
-docker push cirrusci/flutter:$FLUTTER_VERSION
-docker push cirrusci/flutter:$DOCKER_TAG
-docker push cirrusci/flutter:$FLUTTER_VERSION-web
-docker push cirrusci/flutter:$DOCKER_TAG-web
+docker push yunbaoguan/flutter:base
+docker push yunbaoguan/flutter:$DOCKER_TAG
+docker push yunbaoguan/flutter:$DOCKER_TAG-web

@@ -9,6 +9,8 @@ ENV FLUTTER_VERSION $flutter_version
 RUN git clone --branch ${FLUTTER_VERSION} https://github.com/flutter/flutter.git ${FLUTTER_HOME}
 
 ENV PATH ${PATH}:${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin
+ENV PUB_HOSTED_URL https://pub.flutter-io.cn
+ENV FLUTTER_STORAGE_BASE_URL https://storage.flutter-io.cn
 
 # doctor
 RUN flutter doctor
